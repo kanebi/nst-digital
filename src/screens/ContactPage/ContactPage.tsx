@@ -1,5 +1,4 @@
 import { Button } from "../../components/ui/button";
-import { Card, CardContent } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
 import { Header } from "../../components/Header";
 import { SuccessModal } from "../../components/SuccessModal";
@@ -7,7 +6,6 @@ import { useContactForm } from "../../hooks/useContactForm";
 import { 
   Phone, 
   Mail, 
-  MapPin, 
   Calendar,
   CheckCircle,
   ArrowRight,

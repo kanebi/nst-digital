@@ -4,16 +4,7 @@ import { Header } from "../../components/Header";
 import { 
   CheckCircle,
   ArrowRight,
-  Star,
-  Clock,
-  DollarSign,
-  Users,
-  Zap,
-  Shield,
-  Award,
-  Phone,
-  Mail,
-  Calendar
+  Clock
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { JSX } from "react";
@@ -345,7 +336,7 @@ export const PricingPage = (): JSX.Element => {
                           {category.replace(/([A-Z])/g, ' $1').trim()}
                         </h4>
                         <ul className="space-y-2">
-                          {features.map((feature, featureIndex) => (
+                          {features.map((feature: string, featureIndex: number) => (
                             <li key={featureIndex} className="flex items-start gap-2">
                               <CheckCircle className="w-4 h-4 text-[#b9fd50] flex-shrink-0 mt-0.5" />
                               <span className="[font-family:'Outfit',Helvetica] font-normal text-white text-sm leading-relaxed">
@@ -509,7 +500,7 @@ export const PricingPage = (): JSX.Element => {
                         </div>
                       </div>
                       <ul className="space-y-2">
-                        {plan.features.map((feature, featureIndex) => (
+                        {plan.features.map((feature: string, featureIndex: number) => (
                           <li key={featureIndex} className="flex items-start gap-2">
                             <CheckCircle className="w-4 h-4 text-[#b9fd50] flex-shrink-0 mt-0.5" />
                             <span className="[font-family:'Outfit',Helvetica] font-normal text-[#111204] text-sm">
