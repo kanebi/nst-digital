@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Header } from "../../components/Header";
 import type { JSX } from "react";
+import nstLogo from "../../assets/nst-logo.png";
 
 const valuePropositions = [
   {
@@ -1141,10 +1142,9 @@ export const HomePage = (): JSX.Element => {
 
         <div className="flex flex-col md:flex-row justify-between items-start mb-[122px] gap-8">
           <div className="flex flex-col">
-            <div className="[font-family:'Outfit',Helvetica] font-bold text-[32px] tracking-[0] leading-[44.8px] mb-[64px]">
-              <span className="text-white">NST</span>
-              <span className="text-[#b9fd50]">Digital</span>
-            </div>
+            <Link to="/" className="mb-[64px]">
+              <img src={nstLogo} alt="NST Digital Logo" className="h-10 w-auto" />
+            </Link>
 
             <p className="w-full max-w-[311px] [font-family:'Outfit',Helvetica] font-normal text-white text-base tracking-[0] leading-[19.5px]">
               Your complete digital business partner. From websites to AI automation, we build the digital infrastructure that grows businesses.

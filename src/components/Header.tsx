@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import type { JSX } from "react";
+import nstLogo from "../assets/nst-logo.png";
 
 interface HeaderProps {
   currentPage?: string;
@@ -19,10 +20,9 @@ export const Header = ({ currentPage = "" }: HeaderProps): JSX.Element => {
   return (
     <>
       <header className="relative z-50 flex items-center justify-between px-4 md:px-[148px] pt-[39px] pb-8 translate-y-[-1rem] animate-fade-in opacity-0">
-        <div className="[font-family:'Outfit',Helvetica] font-bold text-[24px] md:text-[32px] tracking-[0] leading-[44.8px] whitespace-nowrap">
-          <span className="text-white">NST</span>
-          <span className="text-[#b9fd50]">Digital</span>
-        </div>
+        <Link to="/" className="flex items-center">
+          <img src={nstLogo} alt="NST Digital Logo" className="h-[45px] md:h-14 w-auto" />
+        </Link>
 
         <nav className="hidden md:flex items-center gap-8">
           <Link
@@ -49,12 +49,14 @@ export const Header = ({ currentPage = "" }: HeaderProps): JSX.Element => {
           >
             Services
           </Link>
-          <a
-            href="#portfolio"
-            className="[font-family:'Outfit',Helvetica] font-normal text-white text-base tracking-[0] leading-[26px] whitespace-nowrap hover:text-[#b9fd50] transition-colors"
+          <Link
+            to="/portfolio"
+            className={`[font-family:'Outfit',Helvetica] font-normal text-base tracking-[0] leading-[26px] whitespace-nowrap transition-colors ${
+              isActive("/portfolio") ? "text-[#b9fd50]" : "text-white hover:text-[#b9fd50]"
+            }`}
           >
             Portfolio
-          </a>
+          </Link>
           <Link
             to="/pricing"
             className={`[font-family:'Outfit',Helvetica] font-normal text-base tracking-[0] leading-[26px] whitespace-nowrap transition-colors ${
@@ -108,10 +110,7 @@ export const Header = ({ currentPage = "" }: HeaderProps): JSX.Element => {
             <div className="flex flex-col h-full">
               {/* Menu Header */}
               <div className="flex items-center justify-between p-6 border-b border-[#b9fd4f5e] animate-menu-item">
-                <div className="[font-family:'Outfit',Helvetica] font-bold text-[24px] tracking-[0] leading-[44.8px]">
-                  <span className="text-white">NST</span>
-                  <span className="text-[#b9fd50]">Digital</span>
-                </div>
+                <img src={nstLogo} alt="NST Digital Logo" className="h-8 w-auto" />
                 <Button 
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f] h-8 w-8 p-0 rounded-lg flex items-center justify-center transition-all duration-300 hover:rotate-90"
@@ -150,13 +149,15 @@ export const Header = ({ currentPage = "" }: HeaderProps): JSX.Element => {
                   >
                     Services
                   </Link>
-                  <a
-                    href="#portfolio"
+                  <Link
+                    to="/portfolio"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block px-4 py-3 rounded-lg [font-family:'Outfit',Helvetica] font-medium text-white text-lg hover:bg-[#b9fd5020] hover:text-[#b9fd50] transition-all duration-300 transform hover:translate-x-2 animate-menu-item-delay-4"
+                    className={`block px-4 py-3 rounded-lg [font-family:'Outfit',Helvetica] font-medium text-lg transition-all duration-300 transform hover:translate-x-2 animate-menu-item-delay-4 ${
+                      isActive("/portfolio") ? "bg-[#b9fd5020] text-[#b9fd50]" : "text-white hover:bg-[#b9fd5020] hover:text-[#b9fd50]"
+                    }`}
                   >
                     Portfolio
-                  </a>
+                  </Link>
                   <Link
                     to="/pricing"
                     onClick={() => setIsMobileMenuOpen(false)}
