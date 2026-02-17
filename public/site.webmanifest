@@ -1,0 +1,19 @@
+{
+  "name": "Nonstandard Digital (NST)",
+  "short_name": "NST Digital",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#b9fd50",
+  "background_color": "#111204",
+  "display": "standalone"
+}

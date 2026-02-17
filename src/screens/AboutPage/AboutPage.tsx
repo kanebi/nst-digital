@@ -15,33 +15,6 @@ import { Link } from "react-router-dom";
 import type { JSX } from "react";
 
 export const AboutPage = (): JSX.Element => {
-  const teamMembers = [
-    {
-      name: "Sarah Chen",
-      role: "Founder & CEO",
-      description: "Former enterprise consultant with 12+ years in digital transformation. Led teams at Fortune 500 companies before starting NST to democratize enterprise-level solutions.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
-    },
-    {
-      name: "Marcus Rodriguez",
-      role: "Head of Development",
-      description: "Full-stack developer and automation specialist. Built scalable systems for startups and enterprises. Passionate about AI integration and process optimization.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
-    },
-    {
-      name: "Jennifer Kim",
-      role: "Creative Director",
-      description: "Brand strategist and designer with 10+ years creating memorable digital experiences. Former agency creative director who believes design should drive business results.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
-    },
-    {
-      name: "David Thompson",
-      role: "Head of AI & Automation",
-      description: "AI researcher and automation expert. PhD in Machine Learning. Built AI systems for major tech companies before joining NST to make AI accessible to small businesses.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
-    }
-  ];
-
   const values = [
     {
       icon: Award,
@@ -218,46 +191,7 @@ export const AboutPage = (): JSX.Element => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="relative bg-white py-24">
-        <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <div className="text-center mb-16">
-            <h2 className="[font-family:'Outfit',Helvetica] font-bold text-[#111204] text-4xl md:text-5xl mb-6">
-              Meet Our Leadership Team
-            </h2>
-            <p className="[font-family:'Outfit',Helvetica] font-normal text-[#111204] text-lg max-w-2xl mx-auto">
-              The experienced professionals leading NST Digital's mission to democratize enterprise-level digital solutions.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="bg-[#f8f9fa] border border-[#e9ecef] rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
-                <CardContent className="p-0">
-                  <div className="aspect-square overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="[font-family:'Outfit',Helvetica] font-bold text-[#111204] text-xl mb-2">
-                      {member.name}
-                    </h3>
-                    <p className="[font-family:'Outfit',Helvetica] font-semibold text-[#b9fd50] text-sm mb-4">
-                      {member.role}
-                    </p>
-                    <p className="[font-family:'Outfit',Helvetica] font-normal text-[#111204] text-sm leading-relaxed">
-                      {member.description}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Stats Section */}
       <section className="relative bg-[#1e1f08] py-24">

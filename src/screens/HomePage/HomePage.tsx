@@ -71,8 +71,6 @@ const valuePropositions = [
 const pricingPackages = [
   {
     name: "Business Starter",
-    price: "$1,500",
-    period: "One-Time Setup",
     tagline: "Everything You Need to Launch Your Digital Presence",
     perfectFor: "New businesses, startups, and entrepreneurs ready to launch",
     timeline: "14 business days",
@@ -80,44 +78,32 @@ const pricingPackages = [
       website: [
         "Custom 5-page responsive website",
         "Mobile-optimized design", 
-        "Fast loading speed optimization",
         "SSL security certificate",
         "Contact form integration",
-        "Google Maps integration",
-        "1 year domain registration",
-        "1 year hosting included",
-        "Basic on-page SEO setup",
-        "Google Analytics integration"
+        "1 year domain & hosting included",
+        "Basic on-page SEO setup"
       ],
       brand: [
-        "Custom logo design (3 concepts, unlimited revisions)",
-        "Brand color palette (5 colors)",
-        "Typography system",
-        "Brand style guide (PDF)",
+        "Custom logo design (3 concepts)",
+        "Brand color palette",
+        "Brand style guide",
         "Business card design",
-        "Email signature design",
-        "Social media profile graphics",
-        "Brand assets kit (PNG, SVG, AI files)"
+        "Social media graphics",
+        "Brand assets kit"
       ],
       social: [
         "Professional setup of 3 social platforms",
         "Profile optimization",
-        "Bio writing",
-        "Consistent branding across platforms",
-        "Initial content calendar template",
-        "Social media guidelines document"
+        "Consistent branding across platforms"
       ]
     },
     bonus: [
       "2 weeks of email support after launch",
-      "Basic website training session (1 hour)",
-      "Minor content edits (first 30 days)"
+      "Basic website training session (1 hour)"
     ]
   },
   {
     name: "Nonstandard Growth", 
-    price: "$3,500",
-    period: "One-Time Setup",
     tagline: "Everything in Starter Plus Powerful Automation & Marketing",
     perfectFor: "Growing businesses ready to automate and scale operations",
     timeline: "21 business days",
@@ -127,88 +113,70 @@ const pricingPackages = [
         "Up to 10 custom pages",
         "Blog setup with 5 starter posts",
         "Advanced SEO optimization",
-        "Lead magnet/freebie integration",
         "Newsletter signup integration",
         "Live chat widget"
       ],
       marketing: [
-        "Google Ads account setup and structure",
-        "Facebook/Instagram Ads account setup", 
+        "Google Ads account setup",
+        "Facebook/Instagram Ads setup", 
         "Conversion tracking pixel installation",
-        "Google Search Console setup",
-        "Google My Business optimization",
-        "Retargeting pixel implementation"
+        "Google My Business optimization"
       ],
       crm: [
         "Basic CRM setup (HubSpot, Zoho, or similar)",
         "Lead capture forms connected to CRM",
         "Email automation workflows (3 sequences)",
-        "Contact segmentation setup",
-        "Sales pipeline configuration",
-        "Mobile app setup and training"
+        "Sales pipeline configuration"
       ],
       scheduling: [
         "Calendar integration (Calendly, Acuity, or similar)",
         "Automated booking confirmations",
         "Reminder system setup (email & SMS)",
-        "Sync with Google Calendar",
-        "Buffer time and availability rules",
         "Payment collection for appointments"
       ]
     },
     bonus: [
       "FREE Virtual Assistant - 1 Month (20 hours/month)",
       "3 months priority email support",
-      "Monthly performance review call",
-      "2 hours of training/consultation"
+      "Monthly performance review call"
     ]
   },
   {
     name: "Premium Enterprise",
-    price: "$5,000", 
-    period: "One-Time Setup",
     tagline: "The Ultimate Digital Business Operating System",
     perfectFor: "Established businesses ready for complete digital transformation",
     timeline: "35 business days",
     includes: "Everything in Nonstandard Growth, PLUS:",
     features: {
       ai: [
-        "Custom AI chatbot for website (trained on your business)",
+        "Custom AI chatbot for website",
         "AI phone agent for customer service",
-        "AI email responder (basic inquiry handling)",
+        "AI email responder",
         "Sentiment analysis and reporting"
       ],
       automation: [
         "Custom automated workflows (up to 10 processes)",
         "Multi-step automation sequences",
-        "Conditional logic and branching",
         "Third-party app integrations",
-        "Automated reporting and notifications",
-        "Document generation automation"
+        "Automated reporting and notifications"
       ],
       erp: [
         "Enterprise Resource Planning implementation",
         "Inventory management (if applicable)",
         "Order processing automation",
-        "Financial tracking integration",
-        "Multi-department coordination",
-        "Resource allocation tools"
+        "Financial tracking integration"
       ],
       premium: [
         "Up to 20 custom pages",
         "Advanced e-commerce integration (if needed)",
         "Membership/portal functionality",
-        "Custom API integrations",
-        "Advanced security features",
-        "Automated backup systems"
+        "Custom API integrations"
       ]
     },
     bonus: [
-      "Dedicated Virtual Assistants - 2 Months (2 VAs, 40 hours/month total)",
+      "Dedicated Virtual Assistants - 2 Months (40 hours/month total)",
       "6 months priority support (24/7 emergency line)",
       "Bi-weekly strategy calls",
-      "Quarterly comprehensive business review",
-      "5 hours/month of consulting/adjustments included",
       "Dedicated account manager"
     ]
   }
@@ -445,7 +413,7 @@ const blogPosts = [
 const faqItems = [
   {
     question: "Do you have specific pricing plans to show?",
-    answer: "Yes! We offer three comprehensive packages: Business Starter ($1,500 one-time), Nonstandard Growth ($2,500 one-time), and Premium Enterprise ($4,500 one-time). Each package includes everything you need to launch and scale your digital presence. All packages come with unlimited revisions, 30-day support, and source files. You can upgrade anytime as your business grows.",
+    answer: "Yes! We offer three comprehensive packages: Business Starter, Nonstandard Growth, and Premium Enterprise. Each package includes everything you need to launch and scale your digital presence. All packages come with unlimited revisions, support, and source files. Contact us for detailed pricing information tailored to your specific needs.",
   },
   {
     question: "How many years of experience do you have?",
@@ -887,7 +855,7 @@ export const HomePage = (): JSX.Element => {
           {pricingPackages.map((plan, index) => (
             <Card
               key={index}
-              className="relative bg-[#222222] rounded-2xl border border-[#b9fd4f5e] overflow-visible h-[1400px] flex flex-col"
+              className="relative bg-[#222222] rounded-2xl border border-[#b9fd4f5e] overflow-visible h-[1200px] flex flex-col"
             >
               <CardContent className="p-9 flex flex-col flex-1">
                 {index === 1 && (
@@ -901,14 +869,6 @@ export const HomePage = (): JSX.Element => {
                 <h3 className="[font-family:'Outfit',Helvetica] font-semibold text-white text-[34px] tracking-[-0.68px] leading-[34px] mb-[20px] mt-[41px]">
                   {plan.name}
                 </h3>
-
-                <div className="[font-family:'Outfit',Helvetica] font-semibold text-[#b9fd50] text-[48.5px] text-center tracking-[-0.97px] leading-[normal] mb-[10px]">
-                  {plan.price}
-                </div>
-
-                <div className="[font-family:'Outfit',Helvetica] font-normal text-[#ffffffcc] text-sm text-center tracking-[-0.28px] leading-[normal] mb-[20px]">
-                  {plan.period}
-                </div>
 
                 <p className="w-full max-w-[265px] [font-family:'Outfit',Helvetica] font-normal text-[#ffffffcc] text-sm tracking-[-0.28px] leading-[normal] mb-[20px]">
                   {plan.tagline}
@@ -954,12 +914,14 @@ export const HomePage = (): JSX.Element => {
                       variant="outline"
                       className="w-full h-14 border border-[#b9fd50] text-white hover:bg-[#b9fd50] hover:text-[#111204] rounded-lg [font-family:'Outfit',Helvetica] font-medium text-base transition-colors"
                     >
-                      Get Started Now
+                      View Details
                     </Button>
                   </Link>
-                  <Button className="w-full h-14 bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f] rounded-lg [font-family:'Outfit',Helvetica] font-medium text-base">
-                    Choose This Package
-                  </Button>
+                  <Link to="/contact">
+                    <Button className="w-full h-14 bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f] rounded-lg [font-family:'Outfit',Helvetica] font-medium text-base">
+                      Contact Us
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

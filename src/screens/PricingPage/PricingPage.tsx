@@ -13,206 +13,57 @@ export const PricingPage = (): JSX.Element => {
   const pricingPackages = [
     {
       name: "Business Starter",
-      price: "$1,500",
-      period: "One-Time Setup",
       tagline: "Everything You Need to Launch Your Digital Presence",
       perfectFor: "New businesses, startups, and entrepreneurs ready to launch",
       timeline: "14 business days",
-      cta: "Get Started Now",
+      cta: "Contact Us",
       popular: false,
-      features: {
-        "Website Development": [
-          "Custom 5-page responsive website (Home, About, Services, Portfolio/Products, Contact)",
-          "Mobile-optimized design",
-          "Fast loading speed optimization",
-          "SSL security certificate",
-          "Contact form integration",
-          "Google Maps integration",
-          "1 year domain registration",
-          "1 year hosting included",
-          "Basic on-page SEO setup",
-          "Google Analytics integration"
-        ],
-        "Brand Design Package": [
-          "Custom logo design (3 concepts, unlimited revisions)",
-          "Brand color palette (5 colors)",
-          "Typography system",
-          "Brand style guide (PDF)",
-          "Business card design",
-          "Email signature design",
-          "Social media profile graphics (Facebook, Instagram, LinkedIn covers)",
-          "Brand assets kit (PNG, SVG, AI files)"
-        ],
-        "Social Media Setup": [
-          "Professional setup of 3 social platforms",
-          "Profile optimization",
-          "Bio writing",
-          "Consistent branding across platforms",
-          "Initial content calendar template",
-          "Social media guidelines document"
-        ],
-        "Bonus Inclusions": [
-          "2 weeks of email support after launch",
-          "Basic website training session (1 hour)",
-          "Minor content edits (first 30 days)"
-        ]
-      }
+      features: [
+        "Custom responsive website (5 pages)",
+        "Mobile-optimized design",
+        "Custom logo & brand design",
+        "Social media setup (3 platforms)",
+        "SSL security & hosting (1 year)",
+        "Basic SEO optimization"
+      ]
     },
     {
       name: "Nonstandard Growth",
-      price: "$3,500",
-      period: "One-Time Setup",
       tagline: "Everything in Starter Plus Powerful Automation & Marketing",
       perfectFor: "Growing businesses ready to automate and scale operations",
       timeline: "21 business days",
-      cta: "Scale Your Business",
+      cta: "Get in Touch",
       popular: true,
-      features: {
-        "Everything in Business Starter": ["All features from Business Starter package"],
-        "Advanced Website Features": [
-          "Up to 10 custom pages",
-          "Blog setup with 5 starter posts",
-          "Advanced SEO optimization",
-          "Lead magnet/freebie integration",
-          "Newsletter signup integration",
-          "Live chat widget"
-        ],
-        "Advertising & Marketing Setup": [
-          "Google Ads account setup and structure",
-          "Facebook/Instagram Ads account setup",
-          "Conversion tracking pixel installation",
-          "Google Search Console setup",
-          "Google My Business optimization",
-          "Retargeting pixel implementation"
-        ],
-        "Social Media Verification & Growth": [
-          "Blue check verification assistance (where applicable)",
-          "Verified badge application submission",
-          "Social media audit and optimization",
-          "Content strategy consultation",
-          "3 months of scheduled posts template"
-        ],
-        "CRM System Integration": [
-          "Basic CRM setup (HubSpot, Zoho, or similar)",
-          "Lead capture forms connected to CRM",
-          "Email automation workflows (3 sequences)",
-          "Contact segmentation setup",
-          "Sales pipeline configuration",
-          "Mobile app setup and training"
-        ],
-        "Scheduling & Appointment System": [
-          "Calendar integration (Calendly, Acuity, or similar)",
-          "Automated booking confirmations",
-          "Reminder system setup (email & SMS)",
-          "Sync with Google Calendar",
-          "Buffer time and availability rules",
-          "Payment collection for appointments"
-        ],
-        "FREE Virtual Assistant - 1 Month": [
-          "20 hours/month of VA support",
-          "Task management assistance",
-          "Email management",
-          "Appointment scheduling",
-          "Customer follow-ups",
-          "Administrative support"
-        ],
-        "Additional Support": [
-          "3 months priority email support",
-          "Monthly performance review call",
-          "2 hours of training/consultation"
-        ]
-      }
+      features: [
+        "Everything in Business Starter",
+        "Advanced website (up to 10 pages)",
+        "CRM system integration",
+        "Appointment scheduling system",
+        "Marketing automation setup",
+        "FREE Virtual Assistant (1 month)"
+      ]
     },
     {
       name: "Premium Enterprise",
-      price: "$5,000",
-      period: "One-Time Setup",
       tagline: "The Ultimate Digital Business Operating System",
       perfectFor: "Established businesses ready for complete digital transformation",
       timeline: "35 business days",
-      cta: "Transform Your Business",
+      cta: "Contact Us",
       popular: false,
-      features: {
-        "Everything in Nonstandard Growth": ["All features from Nonstandard Growth package"],
-        "AI-Powered Automation": [
-          "Custom AI chatbot for website (trained on your business)",
-          "AI phone agent for customer service",
-          "Handles incoming calls 24/7",
-          "Answers FAQs automatically",
-          "Books appointments",
-          "Escalates complex issues to human",
-          "Call recording and transcription",
-          "AI email responder (basic inquiry handling)",
-          "Sentiment analysis and reporting"
-        ],
-        "Advanced Workflow Automation": [
-          "Custom automated workflows (up to 10 processes)",
-          "Multi-step automation sequences",
-          "Conditional logic and branching",
-          "Third-party app integrations (Slack, WhatsApp, etc.)",
-          "Automated reporting and notifications",
-          "Document generation automation",
-          "Invoice and payment reminders"
-        ],
-        "ERP System Setup": [
-          "Enterprise Resource Planning implementation",
-          "Inventory management (if applicable)",
-          "Order processing automation",
-          "Financial tracking integration",
-          "Multi-department coordination",
-          "Resource allocation tools",
-          "Comprehensive reporting dashboards"
-        ],
-        "Advanced CRM with Sales Intelligence": [
-          "Enterprise CRM setup (Salesforce, Microsoft Dynamics, or custom)",
-          "AI-powered lead scoring",
-          "Advanced sales funnel automation",
-          "Custom reporting and analytics",
-          "Team collaboration features",
-          "Mobile CRM app configuration",
-          "Integration with accounting software"
-        ],
-        "Premium Website Features": [
-          "Up to 20 custom pages",
-          "Advanced e-commerce integration (if needed)",
-          "Membership/portal functionality",
-          "Custom API integrations",
-          "Advanced security features",
-          "Automated backup systems",
-          "Performance monitoring tools"
-        ],
-        "Dedicated Virtual Assistants - 2 Months": [
-          "2 VAs assigned to your account",
-          "40 hours/month total support (80 hours over 2 months)",
-          "Customized to your specific needs",
-          "Process documentation",
-          "Standard operating procedure creation",
-          "Team training support"
-        ],
-        "Premium Support Package": [
-          "6 months priority support (24/7 emergency line)",
-          "Bi-weekly strategy calls",
-          "Quarterly comprehensive business review",
-          "5 hours/month of consulting/adjustments included",
-          "Dedicated account manager",
-          "Priority feature requests"
-        ],
-        "Strategic Consulting": [
-          "Digital transformation roadmap",
-          "Competitor analysis",
-          "Customer journey mapping",
-          "Conversion rate optimization plan",
-          "Growth strategy consultation"
-        ]
-      }
+      features: [
+        "Everything in Nonstandard Growth",
+        "AI chatbot & phone agent",
+        "Advanced workflow automation",
+        "ERP system implementation",
+        "Enterprise CRM setup",
+        "Dedicated Virtual Assistants (2 months)"
+      ]
     }
   ];
 
   const maintenancePlans = [
     {
       name: "Basic Maintenance",
-      price: "$299",
-      period: "/month",
       features: [
         "2 hours of updates/changes",
         "Security updates",
@@ -224,8 +75,6 @@ export const PricingPage = (): JSX.Element => {
     },
     {
       name: "Growth Maintenance",
-      price: "$599",
-      period: "/month",
       features: [
         "5 hours of updates/changes",
         "Everything in Basic",
@@ -237,8 +86,6 @@ export const PricingPage = (): JSX.Element => {
     },
     {
       name: "Premium Maintenance",
-      price: "$999",
-      period: "/month",
       features: [
         "10 hours of updates/changes",
         "Everything in Growth",
@@ -252,9 +99,9 @@ export const PricingPage = (): JSX.Element => {
   ];
 
   const payAsYouGoRates = [
-    { service: "Development work", rate: "$150/hour" },
-    { service: "Design updates", rate: "$100/hour" },
-    { service: "Content updates", rate: "$75/hour" }
+    { service: "Development work" },
+    { service: "Design updates" },
+    { service: "Content updates" }
   ];
 
   return (
@@ -304,17 +151,9 @@ export const PricingPage = (): JSX.Element => {
                   )}
 
                   <div className="text-center mb-8">
-                    <h3 className="[font-family:'Outfit',Helvetica] font-bold text-white text-2xl mb-2">
+                    <h3 className="[font-family:'Outfit',Helvetica] font-bold text-white text-2xl mb-4">
                       {pkg.name}
                     </h3>
-                    <div className="mb-4">
-                      <span className="[font-family:'Outfit',Helvetica] font-bold text-[#b9fd50] text-4xl">
-                        {pkg.price}
-                      </span>
-                      <span className="[font-family:'Outfit',Helvetica] font-normal text-white text-lg ml-2">
-                        {pkg.period}
-                      </span>
-                    </div>
                     <p className="[font-family:'Outfit',Helvetica] font-semibold text-white text-lg mb-2">
                       {pkg.tagline}
                     </p>
@@ -329,30 +168,25 @@ export const PricingPage = (): JSX.Element => {
                     </div>
                   </div>
 
-                  <div className="space-y-6 mb-8 flex-1">
-                    {Object.entries(pkg.features).map(([category, features]) => (
-                      <div key={category}>
-                        <h4 className="[font-family:'Outfit',Helvetica] font-semibold text-[#b9fd50] text-sm tracking-[0] leading-[20px] mb-3 capitalize">
-                          {category.replace(/([A-Z])/g, ' $1').trim()}
-                        </h4>
-                        <ul className="space-y-2">
-                          {features.map((feature: string, featureIndex: number) => (
-                            <li key={featureIndex} className="flex items-start gap-2">
-                              <CheckCircle className="w-4 h-4 text-[#b9fd50] flex-shrink-0 mt-0.5" />
-                              <span className="[font-family:'Outfit',Helvetica] font-normal text-white text-sm leading-relaxed">
-                                {feature}
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
+                  <div className="space-y-3 mb-8 flex-1">
+                    <ul className="space-y-3">
+                      {pkg.features.map((feature: string, featureIndex: number) => (
+                        <li key={featureIndex} className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-[#b9fd50] flex-shrink-0 mt-0.5" />
+                          <span className="[font-family:'Outfit',Helvetica] font-normal text-white text-sm leading-relaxed">
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
 
                   <div className="mt-auto">
-                    <Button className={`w-full h-14 rounded-lg [font-family:'Outfit',Helvetica] font-semibold text-base transition-colors ${pkg.popular ? 'bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f]' : 'bg-transparent border-2 border-[#b9fd50] text-[#b9fd50] hover:bg-[#b9fd50] hover:text-[#111204]'}`}>
-                      {pkg.cta}
-                    </Button>
+                    <Link to="/contact">
+                      <Button className={`w-full h-14 rounded-lg [font-family:'Outfit',Helvetica] font-semibold text-base transition-colors ${pkg.popular ? 'bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f]' : 'bg-transparent border-2 border-[#b9fd50] text-[#b9fd50] hover:bg-[#b9fd50] hover:text-[#111204]'}`}>
+                        {pkg.cta}
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -392,10 +226,34 @@ export const PricingPage = (): JSX.Element => {
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">20 pages</td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Brand Design</td>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Brand Design Package</td>
                     <td className="px-6 py-4 text-center"><CheckCircle className="w-5 h-5 text-[#b9fd50] mx-auto" /></td>
                     <td className="px-6 py-4 text-center"><CheckCircle className="w-5 h-5 text-[#b9fd50] mx-auto" /></td>
                     <td className="px-6 py-4 text-center"><CheckCircle className="w-5 h-5 text-[#b9fd50] mx-auto" /></td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Logo Design (Concepts & Revisions)</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">3 concepts</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">3 concepts</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">3 concepts</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Social Media Setup</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">3 platforms</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">3 platforms</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">3 platforms</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">SEO Optimization</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Basic</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">Advanced</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Advanced</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Blog Setup</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">5 posts</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">5 posts</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">CRM System</td>
@@ -404,16 +262,28 @@ export const PricingPage = (): JSX.Element => {
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Enterprise</td>
                   </tr>
                   <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Email Automation Workflows</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">3 sequences</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Unlimited</td>
+                  </tr>
+                  <tr>
                     <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Appointment System</td>
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
                     <td className="px-6 py-4 text-center"><CheckCircle className="w-5 h-5 text-[#b9fd50] mx-auto" /></td>
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Advanced</td>
                   </tr>
                   <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Marketing Ads Setup</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">Google & Facebook</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Google & Facebook</td>
+                  </tr>
+                  <tr>
                     <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Virtual Assistant</td>
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
-                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">1 month</td>
-                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">2 months (2 VAs)</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">1 month (20hrs)</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">2 months (40hrs)</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">AI Chatbot</td>
@@ -422,16 +292,40 @@ export const PricingPage = (): JSX.Element => {
                     <td className="px-6 py-4 text-center"><CheckCircle className="w-5 h-5 text-[#b9fd50] mx-auto" /></td>
                   </tr>
                   <tr>
-                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">AI Phone Agent</td>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">AI Phone Agent (24/7)</td>
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
                     <td className="px-6 py-4 text-center"><CheckCircle className="w-5 h-5 text-[#b9fd50] mx-auto" /></td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Workflow Automation</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Up to 10 processes</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">ERP System</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center"><CheckCircle className="w-5 h-5 text-[#b9fd50] mx-auto" /></td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">E-commerce Integration</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Advanced</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Support Duration</td>
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">2 weeks</td>
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#b9fd50] text-sm">3 months</td>
                     <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-white text-sm">6 months</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 [font-family:'Outfit',Helvetica] font-normal text-white text-sm">Dedicated Account Manager</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center [font-family:'Outfit',Helvetica] font-normal text-[#666666] text-sm">—</td>
+                    <td className="px-6 py-4 text-center"><CheckCircle className="w-5 h-5 text-[#b9fd50] mx-auto" /></td>
                   </tr>
                 </tbody>
               </table>
@@ -459,20 +353,23 @@ export const PricingPage = (): JSX.Element => {
                 Pay-As-You-Go
               </h3>
               <p className="[font-family:'Outfit',Helvetica] font-normal text-[#111204] text-sm mb-6">
-                Perfect for occasional updates and changes. Minimum 2-hour blocks.
+                Perfect for occasional updates and changes. Contact us for custom hourly rates.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-4 mb-6">
                 {payAsYouGoRates.map((rate, index) => (
-                  <div key={index} className="flex justify-between items-center">
+                  <div key={index} className="flex items-center gap-2">
+                    <CheckCircle className="w-4 h-4 text-[#b9fd50] flex-shrink-0" />
                     <span className="[font-family:'Outfit',Helvetica] font-normal text-[#111204] text-sm">
                       {rate.service}
-                    </span>
-                    <span className="[font-family:'Outfit',Helvetica] font-semibold text-[#b9fd50] text-sm">
-                      {rate.rate}
                     </span>
                   </div>
                 ))}
               </div>
+              <Link to="/contact">
+                <Button className="bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f] h-12 px-6 rounded-lg [font-family:'Outfit',Helvetica] font-medium text-sm w-full">
+                  Get in Touch
+                </Button>
+              </Link>
             </div>
 
             {/* Monthly Maintenance Plans */}
@@ -489,14 +386,11 @@ export const PricingPage = (): JSX.Element => {
                           <h4 className="[font-family:'Outfit',Helvetica] font-bold text-[#111204] text-lg mb-1">
                             {plan.name}
                           </h4>
-                          <div className="flex items-baseline gap-1">
-                            <span className="[font-family:'Outfit',Helvetica] font-bold text-[#b9fd50] text-2xl">
-                              {plan.price}
-                            </span>
-                            <span className="[font-family:'Outfit',Helvetica] font-normal text-[#111204] text-sm">
-                              {plan.period}
-                            </span>
-                          </div>
+                          <Link to="/contact">
+                            <Button variant="outline" className="mt-2 border-[#b9fd50] text-[#b9fd50] hover:bg-[#b9fd50] hover:text-[#111204] h-10 px-4 rounded-lg [font-family:'Outfit',Helvetica] font-medium text-sm">
+                              Contact Us
+                            </Button>
+                          </Link>
                         </div>
                       </div>
                       <ul className="space-y-2">
@@ -589,9 +483,11 @@ export const PricingPage = (): JSX.Element => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f] h-14 px-8 rounded-lg [font-family:'Outfit',Helvetica] font-medium text-base">
-              Get Started Today
-            </Button>
+            <Link to="/contact">
+              <Button className="bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f] h-14 px-8 rounded-lg [font-family:'Outfit',Helvetica] font-medium text-base">
+                Contact Us Today
+              </Button>
+            </Link>
             <Link to="/contact">
               <Button variant="outline" className="border-[#111204] text-[#111204] hover:bg-[#111204] hover:text-white h-14 px-8 rounded-lg [font-family:'Outfit',Helvetica] font-medium text-base">
                 Schedule Free Consultation
@@ -637,12 +533,14 @@ export const PricingPage = (): JSX.Element => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f] h-14 px-[39px] rounded-lg flex items-center gap-[11px]">
-                <span className="[font-family:'Outfit',Helvetica] font-medium text-base tracking-[0] leading-[22px]">
-                  Get Started Today
-                </span>
-                <ArrowRight className="w-[17.49px] h-[17.49px]" />
-              </Button>
+              <Link to="/contact">
+                <Button className="bg-[#b9fd50] text-[#111204] hover:bg-[#a5d96f] h-14 px-[39px] rounded-lg flex items-center gap-[11px]">
+                  <span className="[font-family:'Outfit',Helvetica] font-medium text-base tracking-[0] leading-[22px]">
+                    Contact Us Today
+                  </span>
+                  <ArrowRight className="w-[17.49px] h-[17.49px]" />
+                </Button>
+              </Link>
               <Link to="/contact">
                 <Button variant="outline" className="border-white text-white hover:bg-white hover:text-[#111204] h-14 px-[39px] rounded-lg">
                   <span className="[font-family:'Outfit',Helvetica] font-medium text-base tracking-[0] leading-[22px]">
